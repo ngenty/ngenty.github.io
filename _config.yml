@@ -19,6 +19,7 @@ logo:              '/assets/public/logo.png'
 
 # Site configurations
 # languages:       [en, fr] # todo
+theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
