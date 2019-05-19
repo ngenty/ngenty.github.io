@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include _header.html -%}
+
+  <main class="page-content wrapper" aria-label="Content">
+    <p>{{ site.author.name | escape }}</p>
+    <p>{{ site.author.job_title | escape }}</p>
+    <p>{{ site.author.description }}</p>
+
+    {% if page.url == "/" %}
+    {% include jumbotron.html %}
+    {% else %}
+    <!-- <div class="">NOT HOMEPAGE</div> -->
+    {% endif %}
+
+    {% include projects.html %}
+
+    {% include form.html %}
+  </main>
+
+  {%- include _footer.html -%}
+
+</body>
+
+</html>

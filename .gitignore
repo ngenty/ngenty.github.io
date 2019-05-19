@@ -1,3 +1,19 @@
+### jekyll ###
 _site
 .sass-cache
 .jekyll-metadata
+.DS_Store
+Gemfile.lock
+
+### OSX ###
+*.DS_Store
+
+### Compressed Packages ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

@@ -1,36 +1,81 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site Info
+title:             'ngenty'
+tagline:           'Work of Nicolas Genty, former web-designer and future front-end developer.'
+description:       'This portfolio uses <a href="#" target="_self">Jekyll</a>.<br>Made with <span id="footer_emoji">emojis</span> by <a href="https://ngenty.com" target="_self">@ngenty</a>.'
+baseurl:           '' # the subpath of your site, e.g. /blog OR set this value to "" if you want your site to be root
+url:               'https://ngenty.com/' # the base hostname & protocol for your site, e.g. http://example.com
+logo:              '/assets/public/logo.png'
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Translations # todo
+# t:
+#   en:
+#     home:        'Home'
+#     categories:  'Categories'
+#     featured_posts: 'Featured Posts'
+#   fr:
+#     home:        'Accueil'
+#     categories:  'Rubrique'
+#     featured_posts: 'Articles'
 
-# Build settings
-markdown: kramdown
-theme: minima
+# Site configurations
+# languages:       [en, fr] # todo
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+markdown:          kramdown
+excerpt_separator: '<!-- more -->'
+show_drafts:       false
+include:           ['_pages']
+sass:
+  style:           compressed
+  sass_dir:        _sass
+permalink:         pretty
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+# Tiers
+google_analytics:  UA-XXXXX-X
 
-# Exclude from processing.
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/'
+  Ptojects:
+    - '/projects/'
+  About:
+    - '/about/'
+  Github Project:
+    - 'http://ngenty.github.io/'
+
+# About/contact
+author:
+  name:            Nicolas Genty
+  job_title:       full stack designer
+  description:     A passionate <strong>full stack designer</strong>, learning to be better.
+  gravatar:        34df580ff9ae66739e40205db630d632 # md5 hash of my gravatar account ID /requestHash "ngenty" (https://secure.gravatar.com/avatar/{hash})
+  mail:            nicolas.genty+ngenty@gmail.com # todo: md5 hash of your email address
+  social:          #todo redo (no purpose)
+    - name:        linkedin
+      login:       ngenty
+      url:         https://www.linkedin.com/in/ngenty/
+    - name:        twitter
+      login:       ngenty
+      url:         https://twitter.com/ngenty
+    - name:        github
+      login:       ngenty
+      url:         https://github.com/ngenty
+    - name:        codepen
+      login:       ngenty
+      url:         https://codepen.io/ngenty/
+    - name:        dribbble
+      login:       ngenty
+      url:         https://dribbble.com/ngenty
+    # - name:      facebook
+    #   login:     <nope, never had & never will…>
+    #   url:       https://dribbble.com/ngenty
+
+# NOTE
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:

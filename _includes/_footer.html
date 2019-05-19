@@ -1,0 +1,23 @@
+<footer class="container">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <p>{{ site.author.name | escape }}</p>
+      <ul class="">
+        {%- if site.author.m@il -%}
+        <li><a href="mailto:{{ site.author.mail }}?subject=feedback">{{ site.author.mail }}</a></li>
+        {%- endif -%}
+        {% for social in site.author.social %}
+        <li>
+        <a href="{{ social.url | escape }}" class="icon_{{ social.name | escape }}">{{ social.name | escape }}</a><br>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <p>{{ site.description }}</p>
+
+  </div>
+</footer>

@@ -1,33 +1,43 @@
-# Sources of my portfolio website
+# ngenty.com [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-I'm actually learning to become a front-end developer at Coding Academy Paris.
-It is a 4 month learning process [Coding-Academy - Web&Go](https://www.coding-academy.fr/web-go/).
-My initial formation at the Gobelins Paris
-I'm a former web-designer with nearly 15 years of experience.
+Personal website running on jekyll.
 
-I'm actually searching a stage in front-end development.
+-   [Read about it](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll)
 
-<img src="https://www.coding-academy.fr/wp-content/uploads/2019/02/LOGO_CODING_ACADEMY_PNG.png" alt="logo Coding Academy" width="150"/>
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Gobelins_School_of_the_Image_logo.svg/1200px-Gobelins_School_of_the_Image_logo.svg.png" alt="logo Gobelins" width="140">
+## Installation
 
-front:
-SASS
-SCSS
-LESS
-HTML5
-CSS3
+Run local server:
 
-language:
-PHP
-JS
-jQuery
+```bash
+git clone https://github.com/ngenty/ngenty.github.io.git
+cd ngenty.github.io
+jekyll serve
+```
 
-framework:
-GSAP (animation)
-Materialize (front)
+Navigate to `localhost:4000`.
 
+## Contributing
 
-### quick description
- - formation Gobelins / parcours pro / différentes missions & startup projects
- - roi-media (design and CTO) (3 years)
- - worketer (2 years)
+If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!
+
+## Acknowledgements
+
+-   [Tania Rascia](https://github.com/taniarascia) - [Jekyll starter](https://www.taniarascia.com/make-a-static-website-with-jekyll/)
+
+## Author
+
+-   [Nicolas Genty](https://ngenty.com)
+
+I'm a former web-designer (formed by [Gobelins Paris](https://www.gobelins-school.com/)) with a nearly 15 years experience into graphic design.  
+I was always interested into the development side so it is quite normal for me to finally learning how to code at [Coding Academy Paris](https://www.coding-academy.fr/).  
+
+This website is one of the many tasks we have to do for us to practice and learn how to code.  
+It is a short (4 months) but intense learning process [Coding-Academy - Web&Go](https://www.coding-academy.fr/web-go/).  
+
+I won't call me "front end developer" at the end but I would be thrilled to find an internship to help me practice and master some of it.  
+
+<div>
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Gobelins_School_of_the_Image_logo.svg/1200px-Gobelins_School_of_the_Image_logo.svg.png" alt="logo Gobelins school, Paris" style="display:inline-block;width:140px; margin-right:2rem">
+  <img src="https://www.coding-academy.fr/wp-content/uploads/2019/02/LOGO_CODING_ACADEMY_PNG.png" alt="logo Coding Academy, Paris" style="display:inline-block;width:140px"/>
+</div>
+<br>

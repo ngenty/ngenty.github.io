@@ -1,0 +1,17 @@
+{% comment %}
+=======================
+The following part calculate differences btwn start of the project and deadline (in days)
+todo: should use in hours w/7 hours per days
+=======================
+{% endcomment %}
+{%- assign pagepost = post | default: post -%}
+<strong>{{ pagepost }}</strong>
+<strong>YOLO</strong>
+{% if pagepost.deadline %}
+{% assign deadline = pagepost.deadline | date: '%s' %}
+{% assign date_start = pagepost.date | date: '%s' %}
+{% assign secondsSince = deadline | minus: date_start     %}
+{% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
+{% assign daysSince = hoursSince | divided_by: 24  %}
+{{daysSince}}
+{% endif %}
