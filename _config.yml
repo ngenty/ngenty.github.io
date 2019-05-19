@@ -27,7 +27,7 @@ excerpt_separator: '<!-- more -->'
 show_drafts:       false
 include:           ['_pages']
 sass:
-  style:           compressed
+  style:           full
   sass_dir:        _sass
 permalink:         pretty
 keep_files:
@@ -51,8 +51,8 @@ nav:
 # About/contact
 author:
   name:            Nicolas Genty
-  job_title:       full stack designer
-  description:     A passionate <strong>full stack designer</strong>, learning to be better.
+  job_title:       future <strong>full stack designer</strong>
+  description:     A passionate former <strong>web-designer</strong>, learning to become a front-end developer!
   gravatar:        34df580ff9ae66739e40205db630d632 # md5 hash of my gravatar account ID /requestHash "ngenty" (https://secure.gravatar.com/avatar/{hash})
   mail:            nicolas.genty+ngenty@gmail.com # todo: md5 hash of your email address
   social:          #todo redo (no purpose)
