@@ -1,4 +1,5 @@
 # configuration dev environment
+environment:      development
 title:            'ngenty [dev]'
 show_drafts:      true
 baseurl:          '' # the subpath of your site, e.g. /blog OR set this value to "" if you want your site to be root

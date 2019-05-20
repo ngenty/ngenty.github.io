@@ -18,6 +18,7 @@ logo:              '/assets/public/logo.png'
 #     featured_posts: 'Articles'
 
 # Site configurations
+environment: production
 # languages:       [en, fr] # todo
 theme:             null # needed in gh-pages (https://github.com/jekyll/jekyll/issues/7478)
 plugins:
