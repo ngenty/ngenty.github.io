@@ -1,3 +1,7 @@
+<script>
+  dataLayer = [];
+</script>
+
 <form id="myForm" class="wj-contact" action="https://formspree.io/{{site.email}}" method="POST">
   <input type="text" name="email" placeholder="Email Address">
   <textarea type="text" name="content" rows="10" placeholder="Message"></textarea>
@@ -6,12 +10,12 @@
   <input type="text" name="_gotcha" style="display:none">
   <input id="form_submit" type="submit" value="Submit">
 </form>
+
 <script>
-  dataLayer = [()];
   var form_submit = document.getElementById("form_submit");
   var form_el = document.getElementById("myForm");
-  console.log("yolo");
   form_el.addEventListener("submit", function(evt) {
+    console.log("yolo");
     evt.preventDefault();
     //event after form sent
     dataLayer.push({

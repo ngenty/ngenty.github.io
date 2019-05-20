@@ -22,7 +22,7 @@ logo:              '/assets/public/logo.png'
 theme:             null # needed in gh-pages (https://github.com/jekyll/jekyll/issues/7478)
 plugins:
   - jekyll-feed
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
 markdown:          kramdown
 excerpt_separator: '<!-- more -->'
 show_drafts:       false

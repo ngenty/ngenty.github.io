@@ -5,32 +5,18 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/public/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/public/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/public/favicon/favicon-16x16.png">
-  {%- seo -%}
+  {%- seo %}
   <link rel="stylesheet" href="{{ "assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}
+  <script>
+    console.log("[HEAD] {{ site.google_analytics }}");
+    console.log("[HEAD] {{ jekyll.environment }}")
+  </script>
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  <script>
+    console.log("[HEAD] PROD")
+  </script>
   <!-- {%- include google-analytics.html -%} -->
-  <script>
-    dataLayer = [()];
-  </script>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WFD3SQW');
-  </script>
-  <!-- End Google Tag Manager -->
+  {% include google_tagmanager_script.html %}
   {%- endif -%}
-
 </head>
