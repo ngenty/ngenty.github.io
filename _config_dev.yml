@@ -1,11 +1,12 @@
 # configuration dev environment
-title:       'ngenty [dev]'
-show_drafts: true
-baseurl:     '' # the subpath of your site, e.g. /blog OR set this value to "" if you want your site to be root
-host:        localhost
-port:        4000
-url:         'https://localhost:4000/' # the base hostname & protocol for your site, e.g. http://example.com
+title:            'ngenty [dev]'
+show_drafts:      true
+baseurl:          '' # the subpath of your site, e.g. /blog OR set this value to "" if you want your site to be root
+host:             localhost
+port:             4000
+url:              'https://localhost:4000/' # the base hostname & protocol for your site, e.g. http://example.com
 sass:
-  style:     full
-  sass_dir:  _sass
-permalink:   pretty
+  style:          full
+  sass_dir:       _sass
+permalink:        pretty
+google_analytics: null

@@ -26,5 +26,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ![alt text](https://via.placeholder.com/500x500.png?text=p03_capture_04)
-
-* * *

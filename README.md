@@ -37,7 +37,7 @@ It is a short (4 months) but intense learning process [Coding-Academy - Web&Go](
 I won't call me "front end developer" at the end but I would be thrilled to find an internship to help me practice and master some of it.  
 
 <div>
-  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Gobelins_School_of_the_Image_logo.svg/1200px-Gobelins_School_of_the_Image_logo.svg.png" alt="logo Gobelins school, Paris" style="display:inline-block;width:140px; margin-right:2rem">
-  <img src="https://www.coding-academy.fr/wp-content/uploads/2019/02/LOGO_CODING_ACADEMY_PNG.png" alt="logo Coding Academy, Paris" style="display:inline-block;width:140px"/>
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Gobelins_School_of_the_Image_logo.svg/1200px-Gobelins_School_of_the_Image_logo.svg.png" alt="logo Gobelins school, Paris" width="150px" height="auto">
+  <img src="https://www.coding-academy.fr/wp-content/uploads/2019/02/LOGO_CODING_ACADEMY_PNG.png" alt="logo Coding Academy, Paris" width="150px" height="auto"/>
 </div>
 <br>

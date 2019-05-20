@@ -19,7 +19,7 @@ logo:              '/assets/public/logo.png'
 
 # Site configurations
 # languages:       [en, fr] # todo
-theme: null
+theme:             null # needed in gh-pages (https://github.com/jekyll/jekyll/issues/7478)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -36,7 +36,7 @@ keep_files:
   - '.git'
   - '.gitignore'
 # Tiers
-google_analytics:  UA-XXXXX-X
+google_analytics:  UA-140482342-1
 
 # Navigation (2nd level links supported)
 nav:
@@ -47,7 +47,7 @@ nav:
   About:
     - '/about/'
   Github Project:
-    - 'http://ngenty.github.io/'
+    - 'https://github.com/ngenty'
 
 # About/contact
 author:
@@ -74,7 +74,7 @@ author:
       url:         https://dribbble.com/ngenty
     # - name:      facebook
     #   login:     <nope, never had & never will…>
-    #   url:       https://dribbble.com/ngenty
+    #   url:       https://facebook.com?id=nope
 
 # NOTE
 # The following items will not be processed, by default. Create a custom list
