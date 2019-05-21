@@ -2,13 +2,11 @@
 layout: default
 ---
 
-{{ page.ref }}
-
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+    <div class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
@@ -21,11 +19,10 @@ layout: default
       =======================
       {% endcomment %}
       {% if post.ref == project %}
-      <em>_project_</em>
+      <!-- <em>_project_</em> -->
       {% if page.tags %}
       <ul itemprop="keywords">
         {% for tag in page.tags %}
-        <!-- <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a> -->
         <li rel="tag">{{ tag }}</li>
         {% endfor %}
       </ul>
@@ -37,7 +34,12 @@ layout: default
           {% assign secondsSince = deadline | minus: date_start     %}
           {% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
           {% assign daysSince = hoursSince | divided_by: 24  %}
-          {{daysSince}} days
+          {{daysSince}}
+          {% if daysSince == 1 %}
+          day
+          {% else %}
+          days
+          {% endif %}
         </div>
         {% endif %}
       </div>
@@ -49,7 +51,7 @@ layout: default
       {%- if page.author -%}
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author.name | escape }}</span></span>
       {%- endif -%}
-    </p>
+    </div>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

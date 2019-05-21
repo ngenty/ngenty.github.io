@@ -1,5 +1,4 @@
 <head>
-  {% include google_tagmanager_script.html %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,14 +8,14 @@
   {%- seo %}
   <link rel="stylesheet" href="{{ "assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}
-  <script>
-    console.log("[HEAD] {{ site.google_analytics }}");
-    console.log("[HEAD] {{ jekyll.environment }}")
-  </script>
   {%- if site.environment == 'production' and site.google_analytics -%}
-  <script>
-    console.log("[HEAD] PROD")
-  </script>
-  {%- include google-analytics.html -%}
+    <script>
+      console.log("[HEAD] {{ jekyll.environment }}")
+    </script>
+    {% include google_tagmanager_script.html %}
+    {%- include google-analytics.html -%}
+    {% comment %}
+    <!-- {%- include form_script.html -%} -->
+    {% endcomment %}
   {%- endif -%}
 </head>

@@ -5,12 +5,13 @@ Shows on home OR projects page
 =======================
 {% endcomment %}
 {% assign sorted-posts = site.posts | where: "ref","project" %}
-{% for post in sorted-posts limit: 6 %}
-<div class="" style="width:33%, display:inline-block">
+{% for post in sorted-posts limit: 12 %}
+<div class="" style="width:33%, display:inline-block" style="background:url('{{post.thumbnail}}');width:50%;padding:2rem">
   <a href="{{ post.url | relative_url }}">
-    <img src="{{post.thumbnail}}" alt="{{post.thumbnail_alt}}">
+    <!-- <img src="{{post.thumbnail}}" alt="{{post.thumbnail_alt}}"> -->
     <ul class="">
       <li>{{post.title}}</li>
+      <li><a href="https://ngenty.com/coding-academy-projects/{{ post.directory }}">[link]</a></li>
       <li>{{ post.date | date_to_string }}</li>
       <li>
         {% for tag in post.tags %}
@@ -25,7 +26,12 @@ Shows on home OR projects page
         {% assign secondsSince = deadline | minus: date_start     %}
         {% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
         {% assign daysSince = hoursSince | divided_by: 24  %}
-        {{daysSince}} days
+        {{daysSince}}
+        {% if daysSince == 1 %}
+          day
+        {% else %}
+          days
+        {% endif %}
       </li>
       {% endif %}
     </ul>

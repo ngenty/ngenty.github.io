@@ -9,8 +9,4 @@ I'm actually living in Paris but I would be thrilled moving abroad (EU or worldw
 
 * * *
 
-{% include map.html %}
-
-* * *
-
 {% include form.html %}

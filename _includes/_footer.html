@@ -10,9 +10,9 @@
         <li><a href="mailto:{{ site.author.mail }}?subject=feedback">{{ site.author.mail }}</a></li>
         {%- endif -%}
         {% for social in site.author.social %}
-        <li>
-        <a href="{{ social.url | escape }}" class="icon_{{ social.name | escape }}">{{ social.name | escape }}</a><br>
-        </li>
+          <li>
+            <a href="{{ social.url | escape }}" class="icon_{{ social.name | escape }}">{{ social.name | escape }}</a><br>
+          </li>
         {% endfor %}
       </ul>
     </div>
