@@ -1,0 +1,225 @@
+@import "Color";
+@import "Reset";
+@import "Base";
+@import "Blockquote";
+@import "Button";
+@import "Code";
+@import "Divider";
+@import "Form";
+@import "Grid";
+@import "Link";
+@import "List";
+@import "Spacing";
+@import "Table";
+@import "Typography";
+@import "Icons";
+@import "Image";
+@import "Utility";
+
+// LAYOUT
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.wpr_primary{
+  background-color: $color-primary;
+}
+.wpr_secondary-light {
+  background-color: lighten($color-secondary, 10%);
+}
+.space{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+// TOOLS
+.icon {
+  width: 128px;
+  height: 128px;
+  margin: .5em;
+  background-position: center;
+}
+.align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.txt-center {
+  text-align: center;
+}
+// HOME
+// HEADER
+.notice{
+  background-color: $color-primary;
+  p{
+    margin: 0px;
+    color: black !important;
+    a{
+      color: black !important;
+    }
+  }
+}
+.alert{
+  background-color: orange;
+  p{
+    margin: 0px;
+    color: black !important;
+    a{
+      color: black !important;
+    }
+  }
+}
+// NAV
+.nav_top{
+  background-color: darken($color-secondary, 25%);
+  a {
+    color: $color-initial;
+  }
+  .txt_small{
+    color: $color-secondary;
+    font-size: 2em;
+    // font-weight: bold;
+    margin-bottom: 0;
+  }
+  ul{
+    margin-bottom: 0;
+    padding: 1rem 0rem 0rem 1rem;
+  }
+}
+.nav_primary {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: auto;
+    li {
+      margin-left: 1rem;
+    }
+  }
+}
+// HEADER PRES
+.jumbotron {
+  color: $color-initial;
+  background-color: $color-secondary;
+  min-height: 50vh;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: $color-secondary;
+  hover:{
+    color: lighten($color-secondary, 10%);
+  }
+}
+
+.title--big {
+  // font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+}
+
+.title--light {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+// PROJECTS
+.projects-list{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project_thumbnail{
+  width: 100%;
+  // todo https://css-tricks.com/apply-a-filter-to-a-background-image/
+  .project_img{
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+    height: 100%;
+  }
+  .project_thumbnail--content{
+    padding: 10%;
+    .projects__tags_list{
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      li{
+        display: inline-block;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+// section{
+//   background-color: #CCC;
+//   margin-top: 2rem !important;
+//   margin-bottom: 2rem !important;
+// }
+.home_pres{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+// .icon {
+//   display: inline-block;
+// }
+//
+// .icon-color {
+//   fill: red;
+// }
+//
+// .icon-s {
+//   width: 1em;
+//   height: 1em;
+// }
+//
+// .icon-m {
+//   width: 1.2em;
+//   height: 1.2em;
+//   margin-bottom: -0.25em;
+//   margin-left: -1.2em;
+// }
+//
+// .icon-l {
+//   width: 64px;
+//   height: 64px;
+// }
+// svg{
+//   width: 64px;
+//   height: 64px;
+// }
+
+.container {
+  max-width: 960px;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) {
+  .project_thumbnail{
+    width: 50%;
+  }
+}
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+  .project_thumbnail{
+    width: 33.33%;
+  }
+}
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {}

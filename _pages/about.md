@@ -11,6 +11,7 @@ lang: en
 {{site.author.description}}
 
 About me  
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+Web-designer by formation I have always tried to master all the processes of website creation. That's why I've always tried to train myself in all the areas required from mockup to development.
+Today, I'm learning front-end development in order to become a "full-stack designer".  
 
 {% include _contact.html %}

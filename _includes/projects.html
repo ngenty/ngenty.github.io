@@ -4,11 +4,58 @@ The following part only shows post with ref: projects
 Shows on home OR projects page
 =======================
 {% endcomment %}
-{% assign sorted-posts = site.posts | where: "ref","project" %}
+
+<!-- PROJECTS -->
+<section class="container space column">
+  <h2 class="txt-center icon-icon_briefcase" style="font-size:2em">Projects</h2>
+  <p class="txt-center">Here's a presentation of differents projects made during my formation.</p>
+
+  <div id="projects" class="flex-column">
+    <div class="flex-row projects-list txt-black">
+      {% assign sorted-posts = site.posts | where: "ref","project" %}
+      {% for post in sorted-posts limit: 12 %}
+      <a href="{{ post.url | relative_url }}" class="project_thumbnail">
+      <div class="project_img" style="background-image:linear-gradient(#40c4ff, #40c4ff),url({{post.thumbnail}})">
+        <div class="flex-column project_thumbnail--content">
+          <h3 class="">{{post.title}}</h3>
+          <p>{{ post.date | date_to_string }}
+            {% if post.deadline %}
+            <span>
+              {% assign deadline = post.deadline | date: '%s' %}
+              {% assign date_start = post.date | date: '%s' %}
+              {% assign secondsSince = deadline | minus: date_start     %}
+              {% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
+              {% assign daysSince = hoursSince | divided_by: 24  %}
+              {{daysSince}}
+              {% if daysSince == 1 %}
+                day
+              {% else %}
+                days
+              {% endif %}
+            </span>
+            {% endif %}
+          </p>
+          <ul class="projects__tags_list">
+            {% for tag in post.tags %}
+            <li class="icon-dev_{{ tag }}">{{ tag }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- {% assign sorted-posts = site.posts | where: "ref","project" %}
 {% for post in sorted-posts limit: 12 %}
 <div class="" style="width:33%, display:inline-block" style="background:url('{{post.thumbnail}}');width:50%;padding:2rem">
   <a href="{{ post.url | relative_url }}">
-    <!-- <img src="{{post.thumbnail}}" alt="{{post.thumbnail_alt}}"> -->
+    <img src="{{post.thumbnail}}" alt="{{post.thumbnail_alt}}">
     <ul class="">
       <li>{{post.title}}</li>
       <li><a href="https://ngenty.com/coding-academy-projects/{{ post.directory }}">[link]</a></li>
@@ -37,4 +84,4 @@ Shows on home OR projects page
     </ul>
   </a>
 </div>
-{% endfor %}
+{% endfor %} -->

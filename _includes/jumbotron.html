@@ -1,4 +1,29 @@
-<div class="" style="height:70vh;background-color:#CCC">
+<section class="wrapper wpr_primary jumbotron">
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+
+  <div class="container column">
+    <h1 class="txt-white">
+      <a rel="author" href="{{ "/" | relative_url }}">{{ site.author.name | escape }}</a>
+      <br>
+      <strong>Web-Designer<br>& Future Front-end Developer !</strong>
+    </h1>
+  </div>
+
+  <div class="container column">
+    <h2>
+      Hello, I'm a senior web designer learning to code!
+    </h2>
+    <p>I've worked on many projects and <strong>it is the time for me to become a front-end developer</strong>.
+      <br>
+      I joined the Coding-Academy (by Epitech) to become one.
+      <br>
+      I'm actually searching for an internship for me to practice what I've learned during my formation.</p>
+  </div>
+</section>
+
+<!-- <div class="" style="height:70vh;background-color:#CCC">
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
@@ -13,4 +38,4 @@
   {%- if titles_size > 0 -%}
   {% endif %}
 
-</div>
+</div> -->

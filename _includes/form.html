@@ -1,17 +1,30 @@
-<!-- <script>
+<script>
   dataLayer = [];
-</script> -->
+</script>
+<section class="container column">
+  <div class="row">
+    <div class="column">
+      <i class="icon-icon_envelope" style="font-size:6rem"></i>
+    </div>
+    <form class="column column-50" action="https://usebasin.com/f/f160a29c6daa" method="post">
+      <label for="form_contact_name">Name</label>
+      <input id="form_contact_name" type="text" name="form_contact_name" value="" placeholder="Name">
+      <label for="form_contact_email">Email</label>
+      <input id="form_contact_email" type="text" name="Email Address" value="" placeholder="Email Address">
+      <label for="form_contact_message">Message</label>
+      <textarea id="form_contact_message" name="form_contact_message"></textarea>
+      <input type="hidden" name="_next" value="/contact">
+      <input type="hidden" name="_subject" value="New Contact Form Submission">
+      <input type="text" name="_gotcha" style="display:none">
+      <input id="form_submit" type="submit" value="Submit">
+    </form>
+    <div class="column">
 
-<form id="myForm" class="wj-contact" action="https://usebasin.com/f/f160a29c6daa" method="POST">
-  <p>Contact Me</p>
-  <input type="text" name="email" placeholder="Email Address">
-  <textarea type="text" name="content" rows="10" placeholder="Message"></textarea>
-  <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
-  <input type="hidden" name="_subject" value="New Contact Form Submission">
-  <input type="text" name="_gotcha" style="display:none">
-  <input id="form_submit" type="submit" value="Submit">
-</form>
-<!-- <script>
+    </div>
+  </div>
+
+</section>
+<script>
   let form_submit = function() {
     form_el.addEventListener("submit", function(e) {
       // event after form sent
@@ -27,4 +40,4 @@
     });
   }
   window.onload = form_submit;
-</script> -->
+</script>

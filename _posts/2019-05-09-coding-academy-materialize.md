@@ -8,7 +8,7 @@ title: "Speed up the Design Process w/ Materialize"
 directory: codeaca_c1web104p6
 description: "Speed up the Design Process w/ Materialize"
 thumbnail: /assets/img/projects/codeaca_c1web104p6-thumb.jpg
-tags: [HTML5, CSS3, Js, Accessibility, Materialize]
+tags: [html5, css3, javascript, accessibility, materialize]
 ---
 
 ![{{page.title}}]({{page.thumbnail}})

@@ -6,9 +6,23 @@
 <body>
   {% include google_tagmanager_iframe.html %}
 
+  <!-- ALERT & INFOS (todo, move > _include) -->
+  <div class="wrapper bg-black alert nospace">
+    <div class="container txt-center txt-primary">
+      <p class="icon-icon_info-standard">This website is a work in progress</p>
+    </div>
+  </div>
+  <div class="wrapper bg-black notice nospace">
+    <div class="container txt-center txt-primary">
+      <p class="icon-icon_info-standard">I'm actually searching an internship (front-end), <a href="contact">contact-me</a> if you have a need.</p>
+    </div>
+  </div>
+
   {%- include _header.html -%}
 
-  <div class="happy_background">
+  {%- include jumbotron.html -%}
+
+  <!-- <div class="happy_background">
     {% comment %}
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -20,14 +34,62 @@
       <span>{{ site.tagline | escape }}</span>
     </div>
 
-    <img src="/assets/img/computer.png" alt="">
 
     {%- if titles_size > 0 -%}
     {% endif %}
 
-  </div>
+  </div> -->
 
-  <main class="page-content wrapper" aria-label="Content">
+  <!-- SKILLS -->
+  <section class="wrapper wpr_secondary">
+    <div class="container column space">
+      <h2 class="txt-center icon-icon_ruler-pencil" style="font-size:2em">Skills</h2>
+      <div class="column">
+        <div class="row">
+          <div class="column">
+            <h3 class="title--light">Web-Designer</h3>
+            <p>With 15+ years of activity in the web-design world, I sure know some tricks.</p>
+          </div>
+          <div class="column">
+            <h3 class="title--light">Experienced</h3>
+            <p>From employee to manager of a small team I know how to integrate a team.</p>
+          </div>
+          <div class="column">
+            <h3 class="title--light">Passionnate</h3>
+            <p>I already know where my passion is. I love the web and its ever-changing world.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3 class="title--light">Enthusiastic</h3>
+            <p>I love the feeling of beginning a long process with a team. I cheerish that.</p>
+          </div>
+          <div class="column">
+            <h3 class="title--light">Curious</h3>
+            <p>I am always interested in deepening my knowledge through exchanges or self-training.</p>
+          </div>
+          <div class="column">
+            <h3 class="title--light">Team Player</h3>
+            <p>After working on many places with many differents people, I know how to adapt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {%- include projects.html -%}
+
+
+  <div class="wrapper wpr_secondary bg-gray--lighter">
+    <section class="container column">
+      <h3 class="txt-center">Contact</h3>
+      <p class="txt-center">Hey, if you liked what you saw, don't hesitate to contact me ;)</p>
+      <div class="row">
+        {%- include form.html -%}
+      </div>
+    </section>
+  </div>
+  <!-- <main class="page-content wrapper" aria-label="Content">
     <p>{{ site.author.name | escape }}</p>
     <p>{{ site.author.job_title }}</p>
     <p>{{ site.author.description }}</p>
@@ -74,16 +136,16 @@
     {% include jumbotron.html %}
     {% else %}
     <!-- <div class="">_!HOMEPAGE_</div> -->
-    {% endif %}
-    {% endcomment %}
+  {% endif %}
+  {% endcomment %}
 
 
-    {% comment %}
-    {% include projects.html %}
-    {% endcomment %}
+  {% comment %}
+  {% include projects.html %}
+  {% endcomment %}
 
-    {% include form.html %}
-  </main>
+  {% include form.html %}
+  </main> -->
 
   {%- include _footer.html -%}
 

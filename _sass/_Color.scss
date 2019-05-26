@@ -1,0 +1,23 @@
+$color-initial: rgb(255, 255, 255) !default;
+$color-primary: rgb(64, 196, 255) !default;
+$color-secondary: rgb(97, 109, 119) !default;
+$color-tertiary: rgb(209, 209, 209) !default;
+$color-quaternary: rgb(224, 224, 224) !default;
+$color-quinary: rgb(244, 245, 246) !default;
+$color-black: rgb(0, 0, 0) !default;
+
+.bg-black{
+  background-color: $color-black;
+}
+.bg-gray--dark{
+  background-color: $color-secondary;
+}
+.bg-gray--dark{
+  background-color: lighten($color-secondary,40%);
+}
+.bg-gray--light{
+  background-color: $color-quaternary;
+}
+.bg-gray--lighter{
+  background-color: $color-quinary;
+}

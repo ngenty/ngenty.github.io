@@ -1,0 +1,30 @@
+
+// Set box-sizing globally to handle padding and border widths
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+// The base font-size is set at 62.5% for having the convenience
+// of sizing rems in a way that is similar to using px: 1.6rem = 16px
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+// @import url('https://fonts.googleapis.com/css?family=Lato:900|Open+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Lato:300|Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Open+Sans&display=swap');
+// font-family: 'Lato', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+// Default body styles
+body {
+  color: $color-secondary;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
