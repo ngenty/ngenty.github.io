@@ -10,9 +10,25 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
+        {% if page.deadline %}
+        <span>(
+          {% assign deadline = page.deadline | date: '%s' %}
+          {% assign date_start = page.date | date: '%s' %}
+          {% assign secondsSince = deadline | minus: date_start %}
+          {% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60 %}
+          {% assign daysSince = hoursSince | divided_by: 24  %}
+          {{daysSince}}
+          {% if daysSince == 1 %}
+          day
+          {% else %}
+          days
+          {% endif %}
+        </span>
+        {% endif %}
+        )
       </time>
-      <time>
-      </time>
+      <br>
+      <a href="https://ngenty.com/coding-academy-projects/{{ page.directory }}" class="">link to the project</a>
       {% comment %}
       =======================
       for testing purpose only / used for determine if actual page is a project or not
@@ -21,28 +37,11 @@ layout: default
       {% if post.ref == project %}
       <!-- <em>_project_</em> -->
       {% if page.tags %}
-      <ul itemprop="keywords">
+      <ul itemprop="keywords" class="projects__tags_list">
         {% for tag in page.tags %}
-        <li rel="tag">{{ tag }}</li>
+        <li rel="tag" class="icon-dev_{{ tag }}">{{ tag }}</li>
         {% endfor %}
       </ul>
-      <div class="">
-        {% if page.deadline %}
-        <div>
-          {% assign deadline = page.deadline | date: '%s' %}
-          {% assign date_start = page.date | date: '%s' %}
-          {% assign secondsSince = deadline | minus: date_start     %}
-          {% assign hoursSince = secondsSince | divided_by: 60 | divided_by: 60     %}
-          {% assign daysSince = hoursSince | divided_by: 24  %}
-          {{daysSince}}
-          {% if daysSince == 1 %}
-          day
-          {% else %}
-          days
-          {% endif %}
-        </div>
-        {% endif %}
-      </div>
       {% endif %}
       {% else %}
       <em>_article_</em>

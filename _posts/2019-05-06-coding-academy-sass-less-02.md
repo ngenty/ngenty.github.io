@@ -8,7 +8,7 @@ title: "SASS/LESS - part02"
 directory: codeaca_c1web104p5
 description: "SASS/LESS - part02"
 thumbnail: /assets/img/projects/codeaca_c1web104p5-thumb.png
-tags: [HTML5, CSS3, Js, Accessibility, SASS, LESS]
+tags: [html5, css3, javascripts, accessibility, sass, less]
 ---
 
 ![{{page.title}}]({{page.thumbnail}})

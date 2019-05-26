@@ -8,7 +8,7 @@ title: "HTML-CSS-Animation"
 directory: codeaca_c1web104p2
 description: "HTML-CSS-Animation"
 thumbnail: /assets/img/projects/codeaca_c1web104p2-thumb.jpg
-tags: [HTML5, CSS3, Js, Accessibility]
+tags: [html5, css3, javascript, accessibility]
 ---
 
 ![{{page.title}}]({{page.thumbnail}})

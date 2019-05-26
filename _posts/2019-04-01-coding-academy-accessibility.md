@@ -8,7 +8,7 @@ title: "Semantics & Accessibility"
 directory: codeaca_c1web104p8
 description: "Semantics & Accessibility"
 thumbnail: /assets/img/projects/codeaca_c1web104p8-thumb.png
-tags: [HTML5, CSS3, Js, Accessibility, Semantic]
+tags: [html5, css3, javascript, accessibility, semantic]
 ---
 
 ![{{page.title}}]({{page.thumbnail}})

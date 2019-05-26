@@ -8,7 +8,7 @@ title: "Animations Js with GSAP Js"
 directory: codeaca_c1web104p9
 description: "Animations Js with GSAP Js"
 thumbnail: /assets/img/projects/codeaca_c1web104p9-thumb.png
-tags: [HTML5, CSS3, Js, Accessibility, GSAP Js]
+tags: [html5, css3, javascript, accessibility, gsap]
 ---
 
 ![{{page.title}}]({{page.thumbnail}})
