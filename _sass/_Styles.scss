@@ -113,7 +113,8 @@
 .jumbotron {
   color: $color-initial;
   background-color: $color-secondary;
-  min-height: 60vw;
+  min-height: 40vw;
+  // max-height: 60vh;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -121,6 +122,7 @@
   overflow: hidden;
   .jumbotron__content{
     margin-top: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
 }
 
