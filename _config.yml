@@ -29,7 +29,7 @@ excerpt_separator: '<!-- more -->'
 show_drafts:       false
 include:           ['_pages']
 sass:
-  style:           full
+  style:           compressed
   sass_dir:        _sass
 permalink:         pretty
 keep_files:

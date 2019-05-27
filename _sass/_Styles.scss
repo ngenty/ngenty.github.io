@@ -11,6 +11,7 @@
 @import "List";
 @import "Spacing";
 @import "Table";
+@import "fig";
 @import "Typography";
 @import "Icons";
 @import "Image";
@@ -112,8 +113,15 @@
 .jumbotron {
   color: $color-initial;
   background-color: $color-secondary;
-  min-height: 50vh;
+  min-height: 60vw;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  .jumbotron__content{
+    margin-top: auto;
+  }
 }
 
 a {
