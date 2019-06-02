@@ -16,6 +16,11 @@ jekyll serve
 
 Navigate to `localhost:4000`.
 
+## todo
+
+-   [ ] create a mutlilang structure
+-   [ ] add home HTML/CSS animation w/ Gsap
+
 ## Contributing
 
 If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!

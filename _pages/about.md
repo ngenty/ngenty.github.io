@@ -14,4 +14,4 @@ About me
 Web-designer by formation I have always tried to master all the processes of website creation. That's why I've always tried to train myself in all the areas required from mockup to development.
 Today, I'm learning front-end development in order to become a "full-stack designer".  
 
-{% include _contact.html %}
+{% include contact.html %}

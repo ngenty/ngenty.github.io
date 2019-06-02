@@ -27,11 +27,16 @@
   background-color: $color-primary;
 }
 .wpr_secondary-light {
-  background-color: lighten($color-secondary, 10%);
+  background-color: lighten($color-secondary, 50%);
 }
+
 .space{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+.innerspace{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .flex-row{
   display: flex;
@@ -113,15 +118,16 @@
 .jumbotron {
   color: $color-initial;
   background-color: $color-secondary;
-  min-height: 40vw;
-  // max-height: 60vh;
+  height: 40vw;
+  max-height: 666px;
+  min-height: 555px;
   padding: 3rem;
   display: flex;
   flex-direction: column;
   position: relative;
   overflow: hidden;
   .jumbotron__content{
-    margin-top: auto;
+    margin: auto 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
 }
@@ -157,7 +163,7 @@ a {
   .project_img{
     background-size: cover;
     background-position: center;
-    background-blend-mode: screen;
+    background-blend-mode: hard-light;
     height: 100%;
   }
   .project_thumbnail--content{
