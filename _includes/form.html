@@ -6,17 +6,18 @@
     <div class="column">
       <i class="icon-icon_envelope" style="font-size:6rem"></i>
     </div>
-    <form class="column column-50" action="https://usebasin.com/f/f160a29c6daa" method="post">
+    <form id="myform" class="column column-50" action="https://usebasin.com/f/f160a29c6daa" method="post">
       <label for="form_contact_name">Name</label>
-      <input id="form_contact_name" type="text" name="form_contact_name" value="" placeholder="Name">
+      <input id="form_contact_name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" type="text" name="form_contact_name" value="" placeholder="Name" required>
       <label for="form_contact_email">Email</label>
-      <input id="form_contact_email" type="text" name="Email Address" value="" placeholder="Email Address">
+      <input id="form_contact_email" type="email" name="Email Address" value="" placeholder="Email Address" required>
       <label for="form_contact_message">Message</label>
-      <textarea id="form_contact_message" name="form_contact_message"></textarea>
+      <textarea id="form_contact_message" name="form_contact_message" required></textarea>
       <input type="hidden" name="_next" value="/contact">
       <input type="hidden" name="_subject" value="New Contact Form Submission">
       <input type="text" name="_gotcha" style="display:none">
-      <input id="form_submit" type="submit" value="Submit">
+      <input class="g-recaptcha" data- sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline" id="form_submit" type="submit" value="Submit">
+      <div id="form-message"></div>
     </form>
     <div class="column">
 
@@ -24,20 +25,55 @@
   </div>
 
 </section>
+
+<script type="text/javascript">
+  (function() {
+   // your page initialization code here
+   // the DOM will be available here
+
+  })();
+
+
+</script>
+
 <script>
   let form_submit = function() {
-    form_el.addEventListener("submit", function(e) {
-      // event after form sent
-      e.preventDefault();
-      dataLayer.push({
-        // GA-Tag-Manager event
-        'event': 'myform_submit',
-        'eventCategory': 'user',
-        'eventAction': 'contact form',
-        'eventLabel': 'form sent',
-        'eventValue': '1'
-      })
-    });
+
+    var form = document.getElementById('myform');
+    var formMessage = document.getElementById('form-message');
+    form.onsubmit = function(event) {
+      event.preventDefault();
+
+      var formData = new FormData(form);
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", form.action, true);
+      xhr.onload = function(e) {
+        console.log(xhr);
+        var response = JSON.parse(xhr.response);
+        if (xhr.status === 200) {
+          formMessage.innerHTML = "Success";
+        } else {
+          formMessage.innerHTML = "Error: " + response.error;
+        }
+      };
+      xhr.send(formData);
+
+      // captcha
+      document.getElementById("g-recaptcha").submit();
+
+      // googletag
+      form_el.addEventListener("submit", function() {
+        dataLayer.push({
+          // GA-Tag-Manager event
+          'event': 'myform_submit',
+          'eventCategory': 'user',
+          'eventAction': 'contact form',
+          'eventLabel': 'form sent',
+          'eventValue': '1'
+        })
+      });
+
+    };
   }
   window.onload = form_submit;
 </script>
