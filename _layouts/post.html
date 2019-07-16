@@ -27,7 +27,7 @@ layout: default
       </span>
     </time>
     {% endif %}
-    <h1 id="post-title" class="p-name txt-center " itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 id="post-title" class="p-name txt-center " itemprop="name headline">{{ page.page_title | escape }}</h1>
     <div class="post-meta">
       {% if post.ref == project %}
           {% if page.tags %}
