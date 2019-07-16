@@ -7,7 +7,7 @@ deadline: 2019-05-01 23:59:59 +0200
 title: "SASS/LESS - part01"
 directory: codeaca_c1web104p4
 description: "SASS/LESS - part01"
-thumbnail: /assets/img/projects/codeaca_c1web104p4-thumb.png
+thumbnail: /assets/img/projects/codeaca_c1web104p4-thumb.jpg
 tags: [html5, css3, js, accessibility]
 ---
 

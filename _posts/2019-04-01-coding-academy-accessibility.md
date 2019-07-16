@@ -7,7 +7,7 @@ deadline: 2019-04-02 23:59:59 +0200
 title: "Semantics & Accessibility"
 directory: codeaca_c1web104p8
 description: "Semantics & Accessibility"
-thumbnail: /assets/img/projects/codeaca_c1web104p8-thumb.png
+thumbnail: /assets/img/projects/codeaca_c1web104p8-thumb.jpg
 tags: [html5, css3, javascript, accessibility, semantic]
 ---
 
