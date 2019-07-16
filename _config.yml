@@ -69,10 +69,10 @@ author:
 # NOTE
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude:
-  - "/assets/"
-  - Gemfile
-  - Gemfile.lock
+#exclude:
+#  - "/assets/"
+#  - Gemfile
+#  - Gemfile.lock
 #  - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
