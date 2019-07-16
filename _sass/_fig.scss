@@ -24,6 +24,7 @@ $brown: rgb(102, 79, 60); // $grey:rgb(189, 195, 199);
 $aluminium: rgb(149, 165, 166);
 $transparent: rgba(0, 0, 0, 0.0);
 $skin: rgb(252, 215, 202);
+$skin_shadow: darken($skin,5%);
 $hair: $brown;
 $hair_shadow: darken($hair,10%);
 $shirt: $red;
@@ -88,7 +89,7 @@ $mac_shadow: darken($aluminium,10%);
 // rounded($top-left,$top-right,$bottom-right,$bottom-left)
 
 .hipstr__head {
-  @include base(absolute,9px,42px,23,$head_width,calc(#{$head_width}*1.5));
+  @include base(absolute,13px,46px,30,$head_width,calc(#{$head_width}*1.5));
   // @include rounded(calc(#{$head_width}/2),calc(#{$head_width}/2),0,0);
   border-radius: calc(#{$head_width}/2);
   background-color: $skin;
@@ -116,46 +117,45 @@ $mac_shadow: darken($aluminium,10%);
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 23;
+    z-index: 30;
     width: 50px;
-    height: 33px;
+    height: 35px;
     border-right: 50px solid #664f3c;
     border-bottom: 10px solid $transparent;
-    border-left: 6px solid #5b4635;
+    // border-left: 6px solid #5b4635;
     // border-bottom-right-radius: 12px;
     // border-bottom-left-radius: 7px;
     -webkit-filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.1));
   }
+  // .hipstr__head__face--mouth {
+  //   position: absolute;
+  //   top: 65px;
+  //   left: 0;
+  //   right: 0;
+  //   z-index: 24;
+  //   width: 16px;
+  //   height: 8px;
+  //   margin: 0 auto;
+  //   border-radius: 2px 2px 6px 6px;
+  //   background-color: #fcd6c9;
+  //   display: none;
+  // }
+}
 
-  .hipstr__head__face--mouth {
+.hipstr__neck {
     position: absolute;
-    top: 65px;
-    left: 0;
-    right: 0;
-    z-index: 24;
-    width: 16px;
-    height: 8px;
-    margin: 0 auto;
-    border-radius: 2px 2px 6px 6px;
-    // background-color: #fcd6c9;
-    // display: none;
-  }
-
-  .hipstr__neck {
-    position: absolute;
-    top: 80px;
+    top: -30px;
     left: 0;
     right: 0;
     z-index: 19;
     width: 30px;
-    height: 33px;
+    height: 50px;
     margin: 0 auto;
-    border-top: 20px solid #e9abab;
-    border-left: 30px solid $transparent;
-    background-color: #fcd6c9;
+    // border-top: 20px solid #e9abab;
+    // border-left: 30px solid $transparent;
+    background-color: $skin_shadow;
     border-radius: 0 0 15px 15px;
   }
-}
 
 .device {
   @include base(absolute,93px,-33px,17,88px,4px);
@@ -237,37 +237,38 @@ $mac_shadow: darken($aluminium,10%);
   clear: both;
   z-index: 2;
   width: 10px;
-  height: 200px;
-  border-bottom: 100px solid $pants;
-  background-color: $pants_shadow;
+  height: calc(100% - 25px);
+  // border-bottom: 100px solid $pants;
+  background: linear-gradient(0deg, $pants_shadow 0%, $pants_shadow 50%, $pants 50%, $pants 100%);
 }
 
 .hipstr__leg-right {
   float: left;
   width: 10px;
-  height: 200px;
+  height: calc(100% - 25px);
   margin-left: 52px;
-  border-bottom: 100px solid $pants;
-  background-color: $pants_shadow;
+  // border-bottom: 100px solid $pants;
+  // background-color: $pants_shadow;
+  background: linear-gradient(0deg, $pants_shadow 0%, $pants_shadow 50%, $pants 50%, $pants 100%);
 }
 
 .hipstr__hip {
   float: left;
   width: 72px;
   height: 25px;
-  border-top: 10px solid #ffffff;
+  // border-top: 10px solid #ffffff; //t-shirt tucked out (sorry mum)
   border-right: 72px solid rgb(46, 204, 113);
   border-bottom: 3px solid $pants;
   background-color: $pants_shadow;
 }
 
-.hipstr__hip--fly {
-  float: left;
-  width: 4px;
-  height: 13px;
-  margin-left: 35px;
-  background-color: $pants;
-}
+// .hipstr__hip--fly {
+//   float: left;
+//   width: 4px;
+//   height: 13px;
+//   margin-left: 35px;
+//   background-color: $pants_shadow;
+// }
 
 .hipstr__shadow {
   position: absolute;
@@ -342,7 +343,7 @@ $mac_shadow: darken($aluminium,10%);
 .hipstr__shirt__right {
   position: absolute;
   top: 0;
-  right: -2px;
+  right: -3px;
   z-index: 7;
   width: 21px;
   height: 156px;
@@ -361,4 +362,5 @@ $mac_shadow: darken($aluminium,10%);
   height: 140px;
   margin: 0 auto;
   background-color: #ffffff;
+  border-bottom: 10px solid #ffffff;
 }

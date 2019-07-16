@@ -1,0 +1,14 @@
+<section id="clients" class="wrapper space  bg_quaternary">
+  <div class="container flex-column innerspace">
+    <h2 class="txt-center icon-icon_heart" style="font-size:2em">Clients</h2>
+    <p class="txt-center">Some of my previous awesome clients !</p>
+    <div class="gallery">
+      {% for image in site.static_files %} {% if image.path contains 'img/logos'
+      %}
+      <div class="img_container clients">
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path | replace: '/assets/img/logos/', ‘@’}}"/>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</section>

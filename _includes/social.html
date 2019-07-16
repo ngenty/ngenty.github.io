@@ -1,5 +1,48 @@
-{%- assign social = site.minima.social_links -%}
+<!-- SOCIAL -->
+<section id="social" class="wrapper bg_tertiary innerspace txt-center">
+  <div class="container">
+  {% comment %}
+  <!-- <h2 class="txt-center icon-icon_share" style="font-size:2em">Social network</h2> -->
+  <!-- <p id="form_msg" class="txt-center">
+    I'm absolutely everywhere, I mean, nearly everywhere…
+  </p> -->
+  {% endcomment %}
+  <ul>
+    <li>
+      <a
+        href="{{ site.author.social.linkedin | escape }}"
+        class="icon-social_linkedin"
+        >Linkedin</a
+      >
+    </li>
+    <li>
+      <a
+        href="{{ site.author.social.twitter | escape }}"
+        class="icon-social_twitter"
+        >Twitter</a
+      >
+    </li>
+    <li>
+      <a
+        href="{{ site.author.social.github | escape }}"
+        class="icon-social_github"
+        >Github</a
+      >
+    </li>
+    <li>
+      <a
+        href="{{ site.author.social.codepen | escape }}"
+        class="icon-social_codepen"
+        >Codepen</a
+      >
+    </li>
+  </ul>
+  </div>
+</section>
 
+
+{% comment %}
+{%- assign social = site.minima.social_links -%}
 <ul class="social-media-list">
   {%- if social.dribbble -%}<li><a href="https://dribbble.com/{{ social.dribbble | cgi_escape | escape }}" title="{{ social.dribbble | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#dribbble' | relative_url }}"></use></svg></a></li>{%- endif -%}
   {%- if social.facebook -%}<li><a href="https://www.facebook.com/{{ social.facebook | cgi_escape | escape }}" title="{{ social.facebook | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg></a></li>{%- endif -%}
@@ -16,3 +59,4 @@
   {%- if social.microdotblog -%}<li><a rel="me" href="https://micro.blog/{{ social.microdotblog | cgi_escape | escape }}" title="{{ social.microdotblog | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#microdotblog' | relative_url }}"></use></svg></a></li>{%- endif -%}
   {%- if social.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}" title="{{ social.rss | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg></a></li>{%- endif -%}
 </ul>
+{% endcomment %}

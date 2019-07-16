@@ -1,11 +1,11 @@
-<div class="wrapper wpr_secondary nav_top">
+<div class="wrapper bg_secondary nav_top">
     <header class="container">
       <nav class="column nav_primary">
         {% if page.url == "/" %}
         <!-- <em>_home/no logo_</em> -->
         {% else %}
         <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><strong>{{ site.title | escape }} </strong><span>{{ site.job_title | escape }}</span></a> -->
-        <h1 class="txt_small"><a href="{{ "/" | relative_url }}">Nicolas Genty</a></h1>
+        <h2 class="txt_small"><a href="{{ "/" | relative_url }}">Nicolas Genty</a></h2>
         {% endif %}
         <ul>
           <li><a href="/projects" class="icon-icon_briefcase">Projects</a></li>
@@ -13,7 +13,8 @@
           <li><a href="/contact" class="icon-icon_envelope">Contact</a></li>
         </ul>
       </nav>
-
+      
+      {% comment %}
     <!-- <div class="wrapper">
       {% assign default_paths = site.pages | map: "path" %}
       {% assign page_paths = site.header_pages | default: default_paths %}
@@ -56,5 +57,6 @@
       </nav>
       {% endif %}
     </div> -->
+    {% endcomment %}
   </header>
 </div>

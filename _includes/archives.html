@@ -1,0 +1,13 @@
+<section id="archives" class="container space column innerspace">
+    <h2 class="txt-center icon-icon_scroll" style="font-size:2em">Past Projects</h2>
+    <p class="txt-center">Little selection of old projects I've made during my career of web-designer…</p>
+    <div class="gallery">
+    {% for image in site.static_files %}
+      {% if image.path contains 'img/archives' %}
+        <div class="img_container">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.path | replace: '/assets/img/archives/', ‘’}}"/>
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </section>

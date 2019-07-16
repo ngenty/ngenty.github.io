@@ -8,12 +8,18 @@
 
   {%- include header.html -%}
 
-  <main class="container" aria-label="Content">
-    <div class="wrapper">
+  <main class="wrapper" aria-label="Content">
+    <div class="container">
+      <div class="wrapper">
       {{ content }}
+    </div>
     </div>
   </main>
 
+  <!-- SOCIAL NETWORK -->
+  {%- include social.html -%}
+
+  <!-- FOOTER -->
   {%- include footer.html -%}
 
 </body>

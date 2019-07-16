@@ -1,15 +1,18 @@
 ---
 layout: page
 title: Projects
-description: Projects I've worked on during my formation at <a href="https://www.coding-academy.fr/" target="_blank">Coding Academy</a>.
+description: Various projects that'll tell you more about my skills.
 permalink: /projects/
+icon: icon-icon_briefcase
 lang: en
 ref: projects
 ---
-
 <!-- ### Projects title -->
-{{page.description}}
+{{post.description}}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+<!-- SCHOOL PROJECTS -->
 {% include projects.html %}
+
+<!-- ARCHIVES -->
+{%- include archives.html -%}
+
