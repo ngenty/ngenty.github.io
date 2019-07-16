@@ -1,7 +1,7 @@
 # Site Info
 title:             'ngenty'
 tagline:           'Web-Designer<br>& Future Front-end Developer!'
-description:       'This portfolio uses <a href="#" target="_self">Jekyll</a>.<br>Made with <span id="footer_emoji">emojis</span> by <a href="https://ngenty.com" target="_self">@ngenty</a>.'
+description:       'Portfolio of Nicolas Genty, experienced web-designer learning to be front-end developer !'
 baseurl:           '' # the subpath of your site, e.g. /blog OR set this value to "" if you want your site to be root
 url:               'https://ngenty.com' # the base hostname & protocol for your site, e.g. http://example.com
 logo:              '/assets/public/logo.png'

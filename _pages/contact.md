@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: "Contact me, Nicolas Genty, experienced web-designer learning front-end development"
 permalink: /contact/
 icon: icon-icon_envelope
 lang: en

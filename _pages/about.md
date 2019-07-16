@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: "About me, Nicolas Genty, experienced web-designer learning front-end development"
 permalink: /about/
 icon: icon-icon_id-badge
 lang: en
