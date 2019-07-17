@@ -48,6 +48,8 @@ nav:
     - '/projects/'
   About:
     - '/about/'
+  Credits:
+    - '/credits/'
   Github Project:
     - 'https://github.com/ngenty'
 
