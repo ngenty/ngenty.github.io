@@ -7,7 +7,7 @@ icon: icon-icon_id-badge
 lang: en
 ---
 
-<div id="about" class="innerspace flex-column">
+<div id="about" class="flex-column">
     <article class="flex_column">
         <div class="thumbnail">
             <img src="{{site.baseurl}}/assets/img/me_thumbnail.jpg" alt="me, myself and I">
