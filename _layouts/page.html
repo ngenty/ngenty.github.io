@@ -5,6 +5,13 @@ layout: default
 <article class="post">
 
   <header class="post-header">
+    {% comment %}
+    {% if page.url == "/credits/" %}
+    <h1 id="page-title" class="txt-center {{page.icon}}">{{ page.page_title | escape }}</h1>
+    {% else %}
+    <h1 id="page-title" class="txt-center {{page.icon}}">{{ page.title | escape }}</h1>
+    {% endif %}
+    {% endcomment %}
     <h1 id="page-title" class="txt-center {{page.icon}}">{{ page.page_title | escape }}</h1>
 
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
