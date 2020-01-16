@@ -1,6 +1,6 @@
 # Site Info
 title:             'ngenty.com'
-tagline:           'Web-Designer<br>& Future Front-end Developer!'
+tagline:           'Web-Designer<br>& Front-end Developer!'
 description:       'Portfolio of Nicolas Genty, experienced web-designer learning to be front-end developer !'
 baseurl:           '' # the subpath of your site, e.g. /blog OR set this value to "" if you want your site to be root
 url:               'https://ngenty.com' # the base hostname & protocol for your site, e.g. http://example.com
